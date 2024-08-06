@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #2d2d2d;
+
+    --font-principal: 'Krona One', sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+}
+
+body {
+    /* height: 100vh;  -- 100% da Tela (Qualquer Dispositivo) */
+    box-sizing: border-box; /* Conteiner deixa tudo dentro do BODY */
+    background-color: var(--cor-primaria); /* Cor de Fundo */
+    color: var(--cor-secundaria); /* Cor do Texto */
+}
+
+header {
+    padding: 2% 0 0 15%;
+}
+
+.navlist {
+    display: flex;
+    gap: 80px;
+
+}
+
+.navlist-txt {
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.home {
+    padding: 5% 15%;
+    gap: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home_conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo {
+    font-size: 2.25rem;
+    font-family: var(--font-principal);
+}
+
+.titulo-destaque {    
+    color: var(--cor-terciaria);
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    font-family:  var(--font-secundaria);
+}
+
+.boton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.redes {
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+    .boton1 {
+        /* background-color: #22D4FD; */
+        border: 2px solid var(--cor-terciaria);
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        width: 50%;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 1.5rem;
+        padding: 21.5px 0;
+        text-decoration: none;
+        color: #F6F6F6;
+        font-family:  var(--font-secundaria);
+        font-weight: 600;
+    }
+
+    /*  Passando do mouse por cima, mostra a cor como informação */
+    .boton1:hover {  
+        background-color: var(--cor-hover);
+    }
+
+.img   {
+    width: 50%;
+}
+
+.rodape {
+    padding: 24px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    font-family:  var(--font-secundaria);
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+
+}
+
+@media (max-width: 1200px) {
+    
+    header {
+        padding: 10%;
+    }
+
+    .navlist {
+        justify-content: center;
+    }
+    
+    .home {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .home_conteudo {
+        width: auto;
+    }
+
+}
